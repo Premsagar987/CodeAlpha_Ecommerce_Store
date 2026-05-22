@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - E-Commerce Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <p>
+            🔥 Free Shipping on Orders Above $100
+        </p>
+
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h1>ShopEasy</h1>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input type="text"
+                   placeholder="Search products...">
+
+            <button>
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- Menu Toggle -->
+        <div class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+
+        <!-- Nav Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="product.html">Products</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+
+            <li>
+
+                <button id="theme-toggle"
+                        class="theme-toggle">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </li>
+
+            <li>
+
+                <a href="cart.html"
+                   class="cart-icon">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-slider">
+
+        <!-- Slide 1 -->
+        <div class="slide active-slide">
+
+            <img src="images/banner1.jpg"
+                 alt="Banner">
+
+            <div class="slide-content">
+
+                <h2>
+                    Mega Electronics Sale
+                </h2>
+
+                <p>
+                    Up to 50% off on premium gadgets.
+                </p>
+
+                <a href="#products-section">
+
+                    <button>
+                        Shop Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="slide">
+
+            <img src="images/banner2.jpg"
+                 alt="Banner">
+
+            <div class="slide-content">
+
+                <h2>
+                    Latest Fashion Collection
+                </h2>
+
+                <p>
+                    Discover trending styles today.
+                </p>
+
+                <a href="#products-section">
+
+                    <button>
+                        Explore Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="slide">
+
+            <img src="images/banner3.jpg"
+                 alt="Banner">
+
+            <div class="slide-content">
+
+                <h2>
+                    Gaming Accessories
+                </h2>
+
+                <p>
+                    Premium gaming products for professionals.
+                </p>
+
+                <a href="#products-section">
+
+                    <button>
+                        Buy Now
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2 class="section-title">
+            Shop By Categories
+        </h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-headphones"></i>
+
+                <h3>Electronics</h3>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                <h3>Fashion</h3>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-gamepad"></i>
+
+                <h3>Gaming</h3>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <i class="fa-solid fa-laptop"></i>
+
+                <h3>Computers</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Our Services -->
+    <section class="services-section">
+
+        <h2 class="section-title">
+            Our Services
+        </h2>
+
+        <div class="features">
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>Free Shipping</h3>
+
+                <p>
+                    Free shipping on all orders above $100.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Secure Payment</h3>
+
+                <p>
+                    100% secure payment protection.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>24/7 Support</h3>
+
+                <p>
+                    Dedicated support anytime.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-box-open"></i>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Quick delivery across the country.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+
+        <button class="filter-btn active-filter"
+                data-filter="all">
+
+            All
+
+        </button>
+
+
+        <button class="filter-btn"
+                data-filter="electronics">
+
+            Electronics
+
+        </button>
+
+
+        <button class="filter-btn"
+                data-filter="fashion">
+
+            Fashion
+
+        </button>
+
+
+        <button class="filter-btn"
+                data-filter="gaming">
+
+            Gaming
+
+        </button>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products"
+             id="products-section">
+
+        <h2 class="section-title">
+            Featured Products
+        </h2>
+
+        <div class="product-container"
+             id="product-container">
+
+            <!-- Electronics -->
+            <div class="product-card electronics">
+
+                <img src="images/headphones.jpg"
+                     alt="Headphones">
+
+                <div class="product-info">
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p class="product-price">
+                        Rs. 3500
+                    </p>
+
+                    <p class="product-description">
+                        Premium noise cancelling headphones.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card electronics">
+
+                <img src="images/laptop.jpg"
+                     alt="Laptop">
+
+                <div class="product-info">
+
+                    <h3>Gaming Laptop</h3>
+
+                    <p class="product-price">
+                        Rs. 95000
+                    </p>
+
+                    <p class="product-description">
+                        High performance gaming laptop.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Fashion -->
+            <div class="product-card fashion">
+
+                <img src="images/shirt.jpg"
+                     alt="Shirt">
+
+                <div class="product-info">
+
+                    <h3>Casual Shirt</h3>
+
+                    <p class="product-price">
+                        Rs. 1800
+                    </p>
+
+                    <p class="product-description">
+                        Comfortable stylish casual shirt.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card fashion">
+
+                <img src="images/shoes.jpg"
+                     alt="Shoes">
+
+                <div class="product-info">
+
+                    <h3>Running Shoes</h3>
+
+                    <p class="product-price">
+                        Rs. 4200
+                    </p>
+
+                    <p class="product-description">
+                        Lightweight sports running shoes.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Gaming -->
+            <div class="product-card gaming">
+
+                <img src="images/mouse.jpg"
+                     alt="Mouse">
+
+                <div class="product-info">
+
+                    <h3>Gaming Mouse</h3>
+
+                    <p class="product-price">
+                        Rs. 2500
+                    </p>
+
+                    <p class="product-description">
+                        RGB gaming mouse for pro gamers.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card gaming">
+
+                <img src="images/keyboard.jpg"
+                     alt="Keyboard">
+
+                <div class="product-info">
+
+                    <h3>Mechanical Keyboard</h3>
+
+                    <p class="product-price">
+                        Rs. 5500
+                    </p>
+
+                    <p class="product-description">
+                        Mechanical RGB keyboard with blue switches.
+                    </p>
+
+                    <button>
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+                Subscribe For Latest Offers
+            </h2>
+
+            <p>
+                Get updates about new products and discounts.
+            </p>
+
+        </div>
+
+
+        <form class="newsletter-form">
+
+            <input type="email"
+                   placeholder="Enter your email">
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2 class="footer-logo">
+                    ShopEasy
+                </h2>
+
+                <p>
+                    Your trusted online shopping destination.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="product.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>Email: support@shopeasy.com</p>
+
+                <p>Phone: +977 9800000000</p>
+
+                <p>Kathmandu, Nepal</p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShopEasy | All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
